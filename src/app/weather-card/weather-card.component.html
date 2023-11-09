@@ -1,0 +1,29 @@
+<div class="weather-card">
+  <h2>Weather in {{ weatherData?.name }}</h2>
+  <div class="weather-details">
+    <div class="temperature">
+      <span class="temp"
+        >{{ weatherData?.main?.temp - 273.15 | number : "1.2-2" }}°C</span
+      >
+      <span class="description">{{
+        weatherData?.weather[0]?.description
+      }}</span>
+    </div>
+    <div class="weather-icon">
+      <img
+        [src]="
+          'http://openweathermap.org/img/w/' +
+          weatherData?.weather[0]?.icon +
+          '.png'
+        "
+        alt="Weather Icon"
+      />
+    </div>
+  </div>
+  <div class="extra-details">
+    <div class="humidity">Humidity: {{ weatherData?.main?.humidity }}%</div>
+    <div class="wind-speed">
+      Wind Speed: {{ weatherData?.wind?.speed }} km/h
+    </div>
+  </div>
+</div>

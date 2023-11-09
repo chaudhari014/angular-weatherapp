@@ -1,0 +1,9 @@
+<div class="container">
+  <div>Weather App</div>
+  <input type="search" class="location-input" [value]="location" #locationInput />
+  <button class="submit-button" (click)="sendLocation(locationInput.value)">
+    Search
+  </button>
+</div>
+<br />
+<app-weather-card [weatherData]="weatherData"></app-weather-card>

@@ -1,0 +1,32 @@
+/* CSS for the Weather Dashboard component */
+.container {
+  margin-top: 25px;
+
+  text-align: center;
+}
+.container div {
+  color: #81d4fa;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: xx-large;
+}
+.location-input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Adjust styling as per your preferences */
